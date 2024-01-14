@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+    font-size: 102%;
+}
+
+body {
+    margin-top: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #f7f2ec;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 200%;
+    text-align: center;
+    letter-spacing: 5px;
+    color: 	#634832;
+}
+
+.aboutinfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.myImage {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.aboutinfo_text{
+    padding-left: 60px;
+    text-align: justify;
+}
