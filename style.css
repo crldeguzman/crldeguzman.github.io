@@ -11,6 +11,8 @@ body {
     background-color: #f7f2ec;
 }
 
+/* ABOUT INFO PAGE */
+
 .title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -35,4 +37,28 @@ body {
 .aboutinfo_text{
     padding-left: 60px;
     text-align: justify;
+}
+
+/* SKILLS PAGE */
+
+.skills {
+    margin-top: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 200%;
+    text-align: center;
+    letter-spacing: 5px;
+    color: 	#634832;
+}
+
+.codeImage {
+    float: right;
+    width: 500px;
+    height: auto;
+}
+
+.skills_text {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
 }
