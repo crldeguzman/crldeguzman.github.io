@@ -25,13 +25,9 @@ body {
 }
 
 .navigation {
-    position: sticky;
     padding-top: 50px;
     padding-bottom: 50px;
-    top: 0;
-    left: 0;
     background-color: #ffffff;
-    z-index: 5;
 }
 
 .navigation > .nav_name {
@@ -56,11 +52,17 @@ body {
     column-gap: 20px;
 }
 
-.navigation > .nav_links > p {
+.navigation > .nav_links > a {
     font-size: 130%;
     font-weight: 600;
     text-transform: lowercase;
     align-self: center;
+    text-decoration: none;
+    color:black;
+}
+
+.navigation > .nav_links > a:hover {
+    color:#784831;
 }
 
 /* about */
@@ -267,6 +269,7 @@ body {
 }
 
 /* projects */
+
 .projects_title {
     margin-top: 100px;
     margin-bottom: 20px;
@@ -282,35 +285,51 @@ body {
     letter-spacing: 0;
 }
 
-.projects > .projects_container > .projects_1,
-.projects > .projects_container > .projects_2,
-.projects > .projects_container > .projects_3,
-.projects > .projects_container > .projects_4 {
+.projects_container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    color: #fffefb;
+}
+
+.proj {
+    border-radius: 10px;
     position: relative;
-
+    overflow: hidden;
+    width: 50%;
+    margin-right: 20px;
 }
 
-.projects > .projects_container > .projects_1 > img,
-.projects > .projects_container > .projects_2 > img,
-.projects > .projects_container > .projects_3 > img,
-.projects > .projects_container > .projects_4 > img {
-    height: 400px;
-    width: 400px;
-    position: absolute;
-    top: 0;
-    left: 0;
+.proj img {
+    width: 100%; 
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
 }
 
-.projects > .projects_container > .projects_1 > .desc,
-.projects > .projects_container > .projects_2 > .desc,
-.projects > .projects_container > .projects_3 > .desc,
-.projects > .projects_container > .projects_4 > .desc {
-    height: 400px;
-    width: 400px;
-    background-color: #44261b;
-    color: #ffffff;
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #caa394);
+    border-radius: 10px;
     position: absolute;
-    z-index: 5;
-    top: 0;
     left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    text-align: left;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.proj:hover img {
+    transform: scale(1.1);
+}
+
+.proj:hover .layer {
+    height: 100%;
 }
