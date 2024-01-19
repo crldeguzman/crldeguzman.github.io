@@ -1,6 +1,5 @@
 # crldeguzman.github.io
 My Learning Task 1: Personal Website.
-<!-- 
 
 How your website accomplished each item in the criteria.
 -> The website accomplished the use of HTML tags through proper structuring of the document, employed various CSS selectors for styling, utilized a mix of CSS styles for visual appeal, incorporated Flexbox for layout management, ensured responsiveness with media queries, and included subtle animations on project images.
@@ -41,5 +40,3 @@ How you could improve your website in the future
 Other thoughts that might be noteworthy
 -> I had a lot of fun with this activity, I feel as if I have used the content and concepts that was taught to me very well, and it was reflected in the website that was made. I also learned a lot with the given guided links, and I am very satisfied on what the website has turned out to be.
 
-
- -->
