@@ -265,3 +265,52 @@ body {
 .interests > .interests_container > .interests_4:hover {
     background-color: #caa394;
 }
+
+/* projects */
+.projects_title {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 150%;
+    color: #44261b;
+    text-align: left;
+    font-weight: 600;
+}
+
+.projects_title > span {
+    letter-spacing: 0;
+}
+
+.projects > .projects_container > .projects_1,
+.projects > .projects_container > .projects_2,
+.projects > .projects_container > .projects_3,
+.projects > .projects_container > .projects_4 {
+    position: relative;
+
+}
+
+.projects > .projects_container > .projects_1 > img,
+.projects > .projects_container > .projects_2 > img,
+.projects > .projects_container > .projects_3 > img,
+.projects > .projects_container > .projects_4 > img {
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.projects > .projects_container > .projects_1 > .desc,
+.projects > .projects_container > .projects_2 > .desc,
+.projects > .projects_container > .projects_3 > .desc,
+.projects > .projects_container > .projects_4 > .desc {
+    height: 400px;
+    width: 400px;
+    background-color: #44261b;
+    color: #ffffff;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+}
