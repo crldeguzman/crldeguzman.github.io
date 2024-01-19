@@ -77,7 +77,6 @@ body {
     border-bottom-left-radius: 50px;
 }
 
-
 .about > .about_text {
     margin-left: 130px;
 }
@@ -332,4 +331,48 @@ body {
 
 .proj:hover .layer {
     height: 100%;
+}
+
+/* media query */
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 0;
+    }
+
+    .navigation, .about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navigation > .nav_links {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .about > .about_image > img {
+        width: 100%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .about > .about_text {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .skills > .skills_container,
+    .interests > .interests_container,
+    .projects_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills > .skills_container > div,
+    .interests > .interests_container > div,
+    .projects_container > .proj {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }
